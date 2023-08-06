@@ -72,7 +72,7 @@ class Wordle:
             guess_word = guess_word.upper()
 
             # Word length
-            if len(guess_word) != 5:
+            if len(guess_word) != self.word_len:
                 print(f'Word must have {self.word_len} letters. You entered {len(guess_word)}!')
                 continue
 
